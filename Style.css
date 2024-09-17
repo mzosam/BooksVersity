@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    border-radius: 5px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#bars{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(255, 252, 252),rgb(1, 206, 45), rgb(255, 253, 253));
+}
+/*-----------------------------------------------------------------------*/
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: darkgray;
+}
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(105, 137, 151);
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+nav li{
+    list-style: none;
+    margin-right: 3rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-family:sans-serif;
+    letter-spacing: 1px;
+}
+nav li a:hover{
+    color: #2f2e2e;
+    font-size: 1.2rem;
+}
+nav li a{
+    text-decoration: none;
+    color: darkgray;
+    transition: .5s;
+}
+.first{
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    margin-right: 20px;
+}
+.logo{
+    margin-left: 20px;
+}
+.logo h1{
+    font-family: magneto;
+    color: #4e4646;
+    font-size: 17px;
+    cursor: none;
+}
+.first .icons i{
+    margin-left: 40px;
+    cursor: pointer;
+    transition: .3s;
+    color: #4e4646;
+}
+.first .icons i:hover{
+    color: rgb(105, 137, 151);
+    font-size: 20px;
+}
+.section-content{
+    position: relative;
+    text-align: center;
+    transform: translateY(140%);
+}
+.section-content h1{
+    font-size: 4rem;
+    font-family: harlow solid;
+}
+.section-content span{
+    color: rgb(105, 137, 151);
+    font-family: bahnschrift light;
+}
+.section-content p{
+    font-family: corbel;
+    color: rgb(70, 69, 69);
+}
+/*----------------------------------------------------------*/
+.photography{
+    align-self: center;
+}
+.photography img{
+    width: 450px;
+    height: 550px;
+}
+.section-two{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(248, 227, 199);
+}
+.second-section-content{
+    width: 55%;
+    height: auto;
+    text-align: justify;
+    align-self: center;
+}
+.second-section-content p{
+    font-size: 1.3rem;
+    font-family: corbel;
+    color: rgb(87, 80, 80);
+}
+.second-section-content span{
+    color: rgb(105, 137, 151);
+}
+/*----------------------------------------------------------------*/
+.third-section-poster{
+    width: 100%;
+    height: 70vh;
+    background-image: url(books/21.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*-----------------------------------------------------------------*/
+.added-section{
+    width: 100%;
+    height: 20vh;
+    background-color: darkgray;
+}
+/*----------------------------------------------------------------*/
+.fouth-section-books{
+    background-color: rgb(248, 227, 199);
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.book{
+    width: 300px;
+    height: 320px; 
+}
+.book:hover .transparent{
+    height: 100%;
+}
+.book img{
+    width: 100%;
+    height: 100%;
+}
+.one, .two, .three{
+    position: relative;
+}
+.transparent{
+    width: 100%;
+    height: 0%;
+    background-color: rgba(105, 137, 151, .78);
+    border-radius: 5px;
+    position: relative;
+    top: -101.5%;
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.transparent button{
+    padding: 15px 70px;
+    margin: 20px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    transition: 300ms;
+    background-color:rgba(105, 137, 151, .78);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+}
+.transparent button:hover{
+    color: rgba(105, 137, 151, .78);
+    background-color:rgb(255, 255, 255);
+    box-shadow: none;
+}
+.book img:hover ~ .transparent{
+    /* display: block; */
+    max-height: 100%;
+}
+/*-----------------------------------------------------------------*/
+footer{
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(8, 8, 19);
+}
+
+#contacts .icons-2{
+   width: 40%;
+   height: 5vh;
+   display: flex;
+   justify-content: space-evenly;
+   margin-left: 30%;
+   cursor: pointer;
+   position: relative;
+   top: 180px;
+}
+hr{
+    border-color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.icons-2,hr, small{
+    position: relative;
+    top: 25%;
+}
+small{
+    position: relative;
+    top: 29%;
+    left: 20px; 
+    color: #6d6d6d;
+}
+small span{
+    color: rgb(89, 121, 134);
+    font-family: 'Courier New', Courier, monospace;
+}
+#contacts .icons-2 i{
+    transition: .3s;
+    color: #ffffff;
+}
+#contacts .icons-2 i:hover{
+    transform: translateY(-10px);
+    color: rgb(89, 121, 134);
+    font-size: 22px;
+}
+table{
+    position: relative;
+    top: 50px;
+    width: 85%;
+    height: 30vh;
+    left: 10%;
+}
+table th{
+    text-align: left;
+    color: #ffffff;
+    font-family: Bahnschrift Light;
+}
+table td{
+    color: #6d6d6d;
+    transition: .30s;
+    font-family: calibri;
+}
+td.number{
+    font-family: Bahnschrift Light;
+}
+td a{
+    text-decoration: none;
+    color: #6d6d6d;
+    transition: .25s;
+}
+table td a:hover{
+    color: wheat;
+    border-left: 1px wheat solid;
+    padding-left: 5px;
+}
+.login{
+    height: 7vh;
+    width: 300px;
+    background-color: rgb(89, 121, 134);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+    transform: translate(1040px, 100px);
+}
+.login input[type = button]{
+    padding: 7px 20px;
+    background-color: rgb(8, 8, 19);
+    color: rgba(105, 137, 151, .78);
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.login input[type = text]{
+    padding: 10px 5px;
+    outline: 0;
+    border: 0;
+    color: rgb(29, 28, 28);
+    background-color: rgb(89, 121, 134);
+}
+.details{
+    height: 100%;
+    background-color: rgb(29, 28, 28);
+    display: none;
+    padding: 45px;
+
+    h1{
+        font-family: calibri;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+        border-left: 3px solid rgb(89, 121, 134);
+        padding-left: 20px;
+        color: rgb(89, 121, 134);
+    }
+    h4{
+        font-family: calibri light;
+        color: rgb(179, 176, 176);
+        font-size: 0.8em;
+    }
+}
+
+/*-----------------------------------------------------------*/
+@media (max-width:600px){
+ body{
+    overflow-x: hidden;
+    background-color:rgb(105, 137, 151);
+ } 
+ .third-section-poster{
+    display: none;
+ }
+ #bars{
+    display: block;
+    margin-left: 40px;
+    transition: .3s;
+ } 
+ #bars:hover{
+    color: rgb(105, 137, 151);
+    cursor: pointer;
+ }
+.second.nav{
+    height: 100vh;
+    position: relative;
+}
+
+.second.nav nav{
+    line-height: 60px;
+    transition: 1s;
+    display: none;
+}
+.second.nav nav a{
+    position: relative;
+    left: 130px;
+}
+nav li a span{
+    display: none;
+}
+.second.nav nav li{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+.logo{
+    margin-right: 37%;
+}
+.first{
+    position: sticky;
+    margin-top: 15px;
+    top: 0;
+    z-index: 2;
+}
+.first .icons{
+    display: none;
+}
+section{
+    height: 60vh;
+}
+.section-content{
+    position: relative;
+    text-align: center;
+    transform: translateY(140%);
+}
+.section-content h1{
+    font-size: 2.5rem;
+    font-family: harlow solid;
+}
+.section-content span{
+    color: rgb(105, 137, 151);
+    font-family: bahnschrift light;
+}
+.section-content p{
+    font-family: corbel;
+    color: rgb(70, 69, 69);
+    font-size: .8rem;
+}
+/*---------------------------------------------------*/
+.photography{
+    align-self: center;
+}
+.photography img{
+    width: 400px;
+    height: 240px;
+    border-radius: 2px;
+}
+.section-two{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-color:rgb(248, 227, 199);
+    height: 90vh;
+}
+.second-section-content{
+    width: auto;
+    height: 15rem;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    margin-top: -40px;
+}
+.second-section-content p{
+    font-size: .85rem;
+    font-family: corbel;
+    color: rgb(87, 80, 80);
+    text-align: justify;
+}
+.second-section-content span{
+    color: rgb(105, 137, 151);
+}
+/*---------------------------------------------------*/
+small{
+    position: relative;
+    top: 29%;
+    left: 20%;
+    color:#4e4646;
+}
+/*-------------------------------------------------------*/
+.fouth-section-books{
+    background-color: rgb(248, 227, 199);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.book{
+    width: 40%;
+    height: 20%;
+}
+.book img{
+    width: 100%;
+    height: 100%;
+    transition: .35s;
+}
+.book img:hover{
+    transform: scale(1.1);
+}
+.one, .three, .five, .seven{
+    position: relative;
+    left: 20px;
+}
+.three{
+    margin-bottom: 30px;
+}
+.five{
+    position: relative;
+    top: -26px;
+}
+.four{
+    position: relative;
+    top:-15px
+}
+.six{
+    position: relative;
+    top: -25px;
+}
+/*--------------------------------------------*/
+.transparent button{
+    padding: 10px 30px;
+    margin: 10px;
+}
+.transparent{
+    top: -104%;
+    }
+
+.login{
+    height: 7vh;
+    width: 300px;
+    background-color: rgb(89, 121, 134);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+    transform: translate(80px, -100px);
+    }
+
+    small, hr, .icons-2{
+        display: none;
+    }
+    input::placeholder{
+        color: rgb(255, 255, 255);
+    }
+    table{
+        display: none;
+    }
+    .details{
+        display: block;
+    }
+    footer{
+        height: 70vh;
+    }   
+}
